@@ -23,8 +23,8 @@ class ProductFactory(factory.django.DjangoModelFactory):
         if not create:
             return
         if extracted:
-            for category in extracted:
-                self.cacleartegory.add(category)
+            for categories in extracted:
+                self.cacleartegory.add(categories)
 
     class Meta:
         model = Product
